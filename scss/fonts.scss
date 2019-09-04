@@ -1,0 +1,23 @@
+$font-path-apercu-pro: '../fonts/ApercuPro/';
+
+@mixin font-face-apercu-pro($file-name, $file-path, $font-weight, $font-style) {
+	$file-path-name: $file-path + $file-name;
+	@font-face {
+		font-weight: $font-weight;
+		font-style: $font-style;
+		font-family: 'Apercu Pro';
+		src: url('#{$file-path-name}.woff2') format('woff2'),
+			url('#{$file-path-name}.woff') format('woff');
+	}
+}
+
+@include font-face-apercu-pro('ApercuPro-Light-Web', $font-path-apercu-pro, 300, normal);
+@include font-face-apercu-pro('ApercuPro-LightItalic-Web', $font-path-apercu-pro, 300, italic);
+@include font-face-apercu-pro('ApercuPro-Regular-Web', $font-path-apercu-pro, 400, normal);
+@include font-face-apercu-pro('ApercuPro-Italic-Web', $font-path-apercu-pro, 400, italic);
+@include font-face-apercu-pro('ApercuPro-Medium-Web', $font-path-apercu-pro, 600, normal);
+@include font-face-apercu-pro('ApercuPro-MediumItalic-Web', $font-path-apercu-pro, 600, italic);
+@include font-face-apercu-pro('ApercuPro-Bold-Web', $font-path-apercu-pro, 700, normal);
+@include font-face-apercu-pro('ApercuPro-BoldItalic-Web', $font-path-apercu-pro, 700, italic);
+@include font-face-apercu-pro('ApercuPro-Black-Web', $font-path-apercu-pro, 800, normal);
+@include font-face-apercu-pro('ApercuPro-BlackItalic-Web', $font-path-apercu-pro, 800, italic);

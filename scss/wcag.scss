@@ -1,0 +1,28 @@
+.wcag-offscreen {
+	position: absolute !important;
+	overflow: hidden !important;
+	clip: rect(0, 0, 0, 0) !important;
+	margin: -1px !important;
+	padding: 0 !important;
+	width: 1px !important;
+	height: 1px !important;
+	border: 0 !important;
+	white-space: nowrap !important;
+}
+
+/* TS Header WCAG fix */
+
+#header {
+	border-bottom: .1rem solid transparent;
+}
+
+#header header.TS-header nav > ul > li > a:focus { /* stylelint-disable-line selector-class-pattern */
+	outline: 3px solid #0071b3;
+}
+
+@media only screen and (min-width: 1010px) {
+
+	#header .headerPlaceholder { /* stylelint-disable-line selector-class-pattern */
+		min-height: 10rem;
+	}
+}

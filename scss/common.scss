@@ -1,0 +1,169 @@
+@import './variables';
+@import './mixins';
+@import './fonts';
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: $base-font-family;
+}
+
+.clearfix:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+select,
+input,
+button {
+	font-family: inherit;
+}
+
+// Controls ui-effect
+
+.ui-effect {
+	position: absolute;
+	display: block;
+	margin-top: -$ui-effect-height;
+	width: 100%;
+	border-bottom: $ui-effect-height solid $color-greylight;
+
+	&:after,
+	&:before {
+		position: absolute;
+		bottom: -$ui-effect-height;
+		width: 0;
+		border-bottom: $ui-effect-height solid transparent;
+		content: '';
+		transition: all .2s ease;
+	}
+
+	&:before {
+		left: 50%;
+	}
+
+	&:after {
+		right: 50%;
+	}
+}
+
+.error.ts-input--focused,
+.error.ts-option--focused {
+
+	@keyframes ui-effect-animation {
+
+		100% {
+			width: 50%;
+		}
+
+		0% {
+			width: 0;
+		}
+	}
+
+	.ui-effect:after,
+	.ui-effect:before {
+		-webkit-animation: ui-effect-animation .2s ease-in-out;
+		animation: ui-effect-animation .2s ease-in-out;
+	}
+}
+
+.ts-input--filled,
+.ts-option--filled {
+
+	.ui-effect:after,
+	.ui-effect:before {
+		width: 50%;
+		border-bottom: $ui-effect-height solid $color-blueelectric;
+	}
+}
+
+.ts-input--disabled,
+.ts-option--disabled {
+
+	.ui-effect:after,
+	.ui-effect:before {
+		width: 50%;
+		border-bottom: $ui-effect-height solid $color-grey3e;
+	}
+}
+
+.ts-input--focused,
+.ts-option--focused {
+
+	.ui-effect:after,
+	.ui-effect:before {
+		width: 50%;
+		border-bottom: $ui-effect-height solid $color-grey333;
+	}
+}
+
+.error {
+
+	.ui-effect:after,
+	.ui-effect:before {
+		width: 50%;
+		border-bottom: $ui-effect-height solid $color-red;
+	}
+}
+
+// Buttons
+
+.transat-button {
+	padding: 1rem 2rem;
+	outline-style: none;
+	outline-color: transparent;
+	border: 3px solid $color-white;
+	color: $color-white;
+	font-weight: normal;
+	font-size: 1.8rem;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+.transat-button:hover {
+	border: 3px solid $color-greylight;
+	transition: all 0.5s ease-in-out;
+}
+
+.transat-button:focus {
+	outline-color: transparent;
+	border: 3px solid $color-bluestar;
+	transition: all 0.5s ease-in-out;
+}
+
+.transat-button:disabled {
+	border: 3px solid $color-white;
+	opacity: 0.4;
+	cursor: default;
+}
+
+.transat-button--next-step {
+	background-color: $color-greenaa;
+}
+
+.transat-button--next-step:focus {
+	border-color: $color-greenlight;
+}
+
+.transat-button--functionality {
+	background-color: $color-blueelectric;
+}
+
+.transat-button--contradiction {
+	background-color: $color-grey69;
+}
+
+.transat-button--reversed {
+	background-color: $color-greylight;
+	color: $color-bluenight;
+}
+
+.transat-button--cancel {
+	background-color: $color-white;
+	color: $color-bluenight;
+}

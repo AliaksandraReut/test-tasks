@@ -1,0 +1,110 @@
+
+@media print {
+
+	.steps-section {
+		display: none;
+	}
+
+	#header {
+		display: none;
+	}
+
+	#footer {
+		display: none;
+	}
+
+	.booking-actions {
+		display: none;
+	}
+
+	.confirmation-flight-details .confirmation-flight-details__flight-dates {
+		text-align: left;
+	}
+
+	.page-container .confirmation-flight-details .flight-info-wrapper {
+		width: 100%;
+		color: red;
+	}
+
+	.confirmation-flight-details .flight-info-wrapper:first-child {
+		padding-right: 0;
+	}
+
+	.confirmation-flight-details-wrapper .flight-info-wrapper:first-child {
+		padding-bottom: 10px;
+	}
+
+	.confirmation-flight-details .confirmation-flight-details-wrapper {
+		display: block !important;
+	}
+
+	.booking-info {
+		flex-direction: row !important;
+	}
+
+	.travelers-list__traveler-item {
+		display: flex !important;
+		flex-direction: column !important;
+		margin-left: 20px !important;
+		width: calc(50% - 40px) !important;
+		border: 1px solid #ddd !important;
+
+		&:nth-child(2n + 1) {
+			margin-left: 0 !important;
+		}
+	}
+
+	.confirmation-flight-details .flight-details__duration-time {
+		left: 43% !important;
+	}
+
+	.booking-info .booking-info__booking-number,
+	.booking-info .booking-info__date-of-reservation,
+	.booking-info .booking-info__date-of-dearture {
+		display: flex !important;
+		flex-direction: column !important;
+		width: 33.3% !important;
+	}
+
+	.select-insurance-collapsed {
+		display: flex !important;
+		flex-wrap: wrap !important;
+		margin-top: 22px !important;
+	}
+
+	.select-insurance-collapsed .select-insurance-collapsed__column-wrapper {
+		display: flex !important;
+		width: 50% !important;
+	}
+
+	.select-insurance-collapsed .select-insurance-collapsed__policy-details-link {
+		display: flex !important;
+		align-items: flex-end !important;
+	}
+
+	.confirmation-insurance .confirmation-insurance__note {
+		position: absolute  !important;
+		top: 60px !important;
+		left: 0 !important;
+		width: 50% !important;
+	}
+
+	.select-insurance-collapsed.viewport-mobile .select-insurance-collapsed__policy-details-link {
+		justify-content: flex-end;
+		padding-top: 0 !important;
+		width: 50% !important;
+	}
+
+	.confirmation-flight-details__list-of-benefits.collapse.collapse--hidden[style],
+	.dashboard__flight-options-list-of-insurance.collapse.collapse--hidden[style] {
+		display:block !important;
+		height: auto !important;
+	}
+
+	.confirmation-cms-container,
+	.manage-flight-options,
+	.dashboard__flight-options-button {
+		display: none !important;
+	}
+}
+

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TransatSeatMap Component tests TransatSeatMap should match snapshot 1`] = `
+<div
+  className="seat-map-container undefined"
+>
+  <div
+    className="seat-map-wrapper name"
+  >
+    <span />
+  </div>
+</div>
+`;

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import '~tdp-dlex-ui-sdk/src/themes/base/light';
+@import '~tdp-dlex-ui-sdk/src/utils/sass/common';
+@import '../../mixins';
+
+$theme-name: ts;
+
+//working colorz
+$white-color: white;
+$black-color: #000;
+$dark-grey-color: #333;
+$grey-color: #757575;
+$greyC2: #c2c2c2;
+$mainBlue: #0071b3;
+
+$lighter-grey-color: #999;
+$light-grey-color: #ccc;
+$border-grey-color: #d9d9d9;
+$lightest-grey-color: #eee;
+$red-color: #d91415;
+$dark-red-color: #e62e2e;
+$light-red-color: #da232a;
+$blue-color: #237ed9;
+$light-blue-color: #0099e6;
+$dark-blue-color: #2e5a90;
+$green-color: #89b359;
+$fontFamily: 'Open Sans', sans-serif;
+$economy-saver-color: #2f7637;
+$economy-flex-color: #1c5b2b;
+$economy-flex-plus-color: #183d2b;
+$first-flex-color: #b3413f;
+$first-flex-plus-color: #8c3332;
+$business-saver-color: #365fb3;
+$business-flex-color: #2e5093;
+$business-flex-plus-color: #203866;
+$plane-icon-color: #808080;
+$fare-selector-border-color: #dfdfdf;
+$cell-grey-color: #666;
+$inbound-blue-color: #537db6;
+
+$themes: map_merge($themes, (
+	ts: map_merge($variables, (
+		fontColor: $black-color,
+		fontFamily: $fontFamily,
+		linkColor: $black-color,
+		backgroundColor: #F5F5F5,
+		buttonFontColor-primary-pressed: darken($red-color, 15%),
+		buttonBorderColor-primary-pressed: lighten($red-color, 25%),
+		buttonBackgroundColor-primary-pressed: lighten($red-color, 25%),
+		buttonFontColor-primary-disabled: #3d4147,
+		buttonBackgroundColor-primary: $red-color,
+		buttonBackgroundColor-primary-hovered: $dark-red-color,
+		buttonBorderColor-primary: $red-color,
+		buttonBorderColor-primary-hovered: $dark-red-color,
+		buttonBackgroundColor-secondary: $grey-color,
+		buttonBackground -secondary-hovered: $dark-grey-color,
+		buttonBorderColo ondary: $grey-color,
+		buttonBorderColo ondary-hovered: $dark-grey-color,
+		navLinkColor: $dark-grey-color,
+		navLinkColor-hovered: $red-color,
+		navLinkColor-active: $red-color,
+		navLinkFontWeight: normal
+	))
+));
+

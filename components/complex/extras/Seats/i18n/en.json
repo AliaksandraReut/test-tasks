@@ -1,0 +1,15 @@
+{
+	"SEAT_SELECTION_TEXT": "Seat selection: {passengerName}, flight {operatingAirline}{flightNumber}",
+	"CONFIRM_BUTTON": "Validate",
+	"MODIFY_BUTTON": "Modify",
+	"AVAILABLE": "Available",
+	"OCCUPIED": "Occupied",
+	"NOT_AVAILABLE": "Not available",
+	"SELECTED_BY": "Selected",
+	"ISOLATE_SEAT_NOTIFICATION_TITLE": "Information",
+	"ISOLATE_SEAT_NOTIFICATION_MESSAGE": "An error occurred during seat selection. This selection is not possible, it prevents two passengers from being seated together.",
+	"ISOLATE_SEAT_CLOSE_BUTTON": "Close",
+	"EXIT_CHILD_ERROR_CLOSE_BUTTON": "Close",
+	"EXIT_CHILD_ERROR_TITLE": "Warning",
+	"EXIT_CHILD_ERROR_MESSAGE": "Children (under 16 years old) cannot sit in the exit row seats."
+}

@@ -1,0 +1,15 @@
+import 'babel-polyfill';
+import 'iscroll';
+import 'react';
+import 'react-dom';
+import 'react-iscroll';
+import 'react-router';
+import 'react-intl';
+import 'react-proxy';
+import 'react-modal';
+import 'react-transition-group';
+import 'react-router-dom';
+import 'alt';
+import 'alt-container';
+import 'connect-alt';
+import 'moment';
